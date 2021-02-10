@@ -1,0 +1,24 @@
+
+
+.block{
+    border: 1px solid black;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornflowerblue;
+    font-size: 30px;
+    background-color: black;
+}
+.blockAlarm{
+    border: 1px solid black;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornflowerblue;
+    font-size: 30px;
+    background-color: red;
+}
