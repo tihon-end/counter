@@ -1,7 +1,12 @@
 
 
 .btn{
-    color: cornflowerblue;
-    width: 40px;
-    margin: 2px 2px;
+    color: black;
+    width: 70px;
+    /*margin: 2px 2px;*/
+    background-color: cornflowerblue;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
