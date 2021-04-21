@@ -8,7 +8,7 @@ export type InputType = {
 }
 
 
-function Input(props: InputType) {
+function InputStock(props: InputType) {
     // let setValue = (event: ChangeEvent<HTMLInputElement>) => {
     //     let value = Number(event.currentTarget.value)
     //    props.setValue(value)
@@ -25,4 +25,4 @@ function Input(props: InputType) {
 }
 
 
-export default Input
+export default InputStock
