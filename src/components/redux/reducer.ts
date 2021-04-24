@@ -4,6 +4,7 @@
     maxValue: 5,
     startCount: 0,
     error: false,
+
 }
 
 export type InitialStateType = typeof initialState
@@ -37,7 +38,7 @@ export const counterReducer = (state: InitialStateType = initialState, action: A
         }
         case "ON-CHANGE-ERROR":{
             return {
-                ...state, error: action.error,
+                ...state, error: action.error
             }
         }
         default:
@@ -52,12 +53,14 @@ export const onChangeStartCountAC = (startCount: number) => ({type: 'ON-CHANGE-S
 export const onChangeSetAC = () => ({type: 'ON-CHANGE-SET'} as const)
 export const onChangeErrorAC = (error: boolean) => ({type: 'ON-CHANGE-ERROR', error} as const)
 
+
 export type SetClickInACType = ReturnType<typeof setClickInAC>
 export type setClickResACType = ReturnType<typeof setClickResAC>
 export type onChangeMaxValueACType = ReturnType<typeof onChangeMaxValueAC>
 export type onChangeStartCountACType = ReturnType<typeof onChangeStartCountAC>
 export type onChangeSetACType = ReturnType<typeof onChangeSetAC>
 export type onChangeErrorACType = ReturnType<typeof onChangeErrorAC>
+
 
 type ActionsType = SetClickInACType
     | setClickResACType

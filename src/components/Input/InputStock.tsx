@@ -1,9 +1,18 @@
-import {ChangeEvent} from "react";
-import style from './Input.module.css'
+import React, {ChangeEvent} from "react";
+
+import {TextField} from "@material-ui/core";
+
+
+
 
 export type InputType = {
     value: number
     setting: (event: ChangeEvent<HTMLInputElement>) => void
+label: string
+    variant: string
+    name: string
+
+
 
 }
 
@@ -15,9 +24,17 @@ function InputStock(props: InputType) {
 
     // }
 
+
+
     return (
         <div>
-            <input className={style.inp} type='number' value={props.value} onChange={props.setting}  />
+            <TextField
+name={props.name}
+                style={{color: 'red'}}
+
+                size={'small'}  variant={"outlined"} label={props.label} margin={'normal'}
+                        type='number' value={props.value}
+                       onChange={props.setting}  />
 
         </div>
 

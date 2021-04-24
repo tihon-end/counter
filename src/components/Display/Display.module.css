@@ -1,7 +1,7 @@
 
 
 .block{
-    border: 2px solid cornflowerblue;
+    /*border: 2px solid cornflowerblue;*/
     border-radius: 5px;
     width: 90%;
     height: 70px;
@@ -11,20 +11,20 @@
     color: cornflowerblue;
     font-size: 50px;
     font-weight: bolder;
-    background-color: #084760;
+    /*background-color: #084760;*/
 
 }
 .blockAlarm{
-    border: 2px solid cornflowerblue;
+    /*border: 2px solid cornflowerblue;*/
     border-radius: 5px;
     width: 90%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: cornflowerblue;
+    color: red;
     font-size: 50px;
     font-weight: bolder;
-    background-color: red;
+    /*background-color: red;*/
 
 }
