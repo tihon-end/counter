@@ -40,7 +40,7 @@ function Counter() {
 
 
     let onChangeMaxValue = (event: ChangeEvent<HTMLInputElement>) => {
-        let maxValue = Number(event.currentTarget.value)
+        let maxValue = event.currentTarget.valueAsNumber
         dispatch(onChangeMaxValueAC(maxValue))
     }
 

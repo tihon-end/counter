@@ -2,7 +2,7 @@
  let initialState = {
     count: 0 ,
     maxValue: 5,
-    startCount: 0,
+    startCount: Number(''),
     error: false,
 
 }
