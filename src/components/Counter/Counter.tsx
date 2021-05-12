@@ -45,7 +45,7 @@ function Counter() {
     }
 
     let onChangeStartCount = (event: ChangeEvent<HTMLInputElement>) => {
-        let startCount = Number(event.currentTarget.value)
+        let startCount = event.currentTarget.valueAsNumber                      //Number() не работает
         dispatch(onChangeStartCountAC(startCount))
     }
 
